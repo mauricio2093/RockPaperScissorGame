@@ -145,7 +145,7 @@ function game(playerOption, cpuOption){
                 text:'Try Again!',
                 icon:'question',
                 color: '#fff',
-                background: '#1b1b1b',
+                background: 'rgba(27, 27, 27, 0.96)',
                 backdrop: `rgba(0,0,123,0.4)`,
             });
             text__cpu = '';
@@ -162,7 +162,7 @@ function game(playerOption, cpuOption){
                 text:'Well Play!',
                 icon:'success',
                 color: '#fff',
-                background: '#1b1b1b',
+                background: 'rgba(27, 27, 27, 0.96)',
                 backdrop: `rgba(55, 221, 64,0.4)`,
             });
             playerScore++;
@@ -181,7 +181,7 @@ function game(playerOption, cpuOption){
                 text:'Try Again!',
                 icon:'error',
                 color: '#fff',
-                background: '#1b1b1b',
+                background: 'rgba(27, 27, 27, 0.96)',
                 backdrop: `rgba(250, 250, 0,0.7)`,
             });
             cpuScore++;
@@ -199,7 +199,7 @@ function game(playerOption, cpuOption){
             text: "Please Chose an Option !",
             icon: 'warning',
             color: '#fff',
-            background: '#1b1b1b',
+            background: 'rgba(27, 27, 27, 0.96)',
             backdrop: `rgba(212, 29, 29,0.7)`,
         });
         text__cpu = '';

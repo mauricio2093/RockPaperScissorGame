@@ -196,3 +196,7 @@ button:hover {
 @media (max-width: 380px) {
     
 }
+.git{
+    text-decoration: none;
+    padding-left: 5px;
+}
