@@ -1,0 +1,23 @@
+{
+  "name": "piedrapapeltijera",
+  "version": "1.0.0",
+  "description": "This is a web page of the game rock, paper, scissors. Developed with JavaScript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauricio2093/RockPaperScissorGame.git"
+  },
+  "author": "Mauricio Cadena Barona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauricio2093/RockPaperScissorGame/issues"
+  },
+  "homepage": "https://github.com/mauricio2093/RockPaperScissorGame#readme",
+  "devDependencies": {
+    "live-server": "~~1.2.2"
+  }
+}

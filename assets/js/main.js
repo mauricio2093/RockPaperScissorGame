@@ -1,7 +1,7 @@
 var btn_rock = document.getElementById("Rock");
 var btn_paper = document.getElementById("Paper");
 var btn_scissor = document.getElementById("Scissor");
-var btn_star = document.getElementById("StarGame");
+var btn_start = document.getElementById("StartGame");
 var img_player = document.getElementById("Player");
 var img_cpu = document.getElementById("Cpu");
 var playerScore= document.getElementById("playerPoint").innerText;
@@ -17,13 +17,13 @@ var cpuOption;
 
 
 init_images();
-btn_star.onclick = function() {
+btn_start.onclick = function() {
     cpuOption = pickRandom('rock',
         'paper',
         'scissor',);
     text_Game();
     setTimeout(()=>{
-        menu = "star";
+        menu = "start";
         console.log(playerOption);
         display_option_cpu(cpuOption);
         game(playerOption, cpuOption);
@@ -103,25 +103,20 @@ btn_scissor.onclick = function() {
     
 }
 
-    
-
-
 switch (menu) {
     case "wait":
         console.log("waiting ...");
         break;
-    case "star":
+    case "start":
         console.log("Sarting Game ...");
         break;
 }
-
 
 function init_images() {
     btn_rock.style.backgroundImage = " url('../assets/img/playerRock.png')";
     btn_paper.style.backgroundImage = " url('../assets/img/playerPaper.png')";
     btn_scissor.style.backgroundImage = "url('../assets/img/playerScissors.png')";
 }
-
 
 function display_option_cpu(option) {
     if (option === 'rock') {
@@ -216,5 +211,11 @@ function game(playerOption, cpuOption){
         },1500);
     }
 }
+/*======  Servic Worker  ======*/
 
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/sw.js').catch(error => {
+            console.log(error.message);
+    })
+};
 
